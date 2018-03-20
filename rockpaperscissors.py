@@ -4,10 +4,12 @@
 from random import randint
 import sys
 
+#list of winning pairs in the format (player_choice,cpu_choice)
 win_pairs = [("rock","scissors"),
 		     ("scissors","paper"),
 		     ("paper","rock")]
 
+#list of options for the CPU to randomly choose from
 options = ["rock", "paper", "scissors"]
 
 def welcome():
@@ -30,7 +32,6 @@ def welcome():
 			print("Numbers only! Please try again.")
 			continue
 		else:
-#			return num_rounds
 			break
 
 		
