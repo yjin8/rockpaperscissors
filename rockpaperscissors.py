@@ -66,4 +66,26 @@ def rps(num_rounds):
 	else:
 		print("You tied, {} to {}".format(player_points,cpu_points))
 
+#asks users if they would like to play the game again.
+	while True:
+		response = input("Would you like to play again? \n"
+			"Please enter Y/N: ")
+		if response.lower() != 'y' and response.lower() != 'n':
+			print("Sorry invalid response. Please enter 'y' or 'n'")
+			continue
+		elif response.lower() == 'n':
+			print("Good bye!")
+			sys.exit()
+		else:
+			break
+	while True:
+		try:
+			num_rounds = int(input("Enter the number of rounds you want to play: "))
+			rps(num_rounds)
+		except ValueError:
+			print("Numbers only! Please try again.")
+			continue
+		else:
+			break
+
 welcome()
