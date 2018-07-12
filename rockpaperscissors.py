@@ -60,9 +60,9 @@ def rps(num_rounds):
 			num_rounds -= 1
 			r += 1
 	if player_points > cpu_points:
-		print("You win, {} to {}".format(player_points,cpu_points))
+		print("You win, {} to {} :D".format(player_points,cpu_points))
 	elif cpu_points > player_points:
-		print("You lose, {} to {}".format(player_points,cpu_points))
+		print("You lose, {} to {} :(".format(player_points,cpu_points))
 	else:
 		print("You tied, {} to {}".format(player_points,cpu_points))
 
